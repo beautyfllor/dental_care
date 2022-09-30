@@ -13,7 +13,7 @@ const Input = ({label, iconName, error, onFocus=()=>{}, ...props}) => {
 
             <View style={[styles.inputContainer, {borderColor: error ? COLORS.red : COLORS.green}]}>
 
-                <Icon name={iconName} style={styles.icon}/>
+                <Icon name={iconName} style={[styles.icon, {color: error ? COLORS.red : COLORS.green}]}/>
 
                 <TextInput 
                         style={styles.textInput}
@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
     },
     icon:{
         fontSize:22,
-        color:COLORS.green,
         marginRight:10
     }
 });
