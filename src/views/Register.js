@@ -38,32 +38,32 @@ const Register = () =>{
 
     if(!inputs.name) {
       validate = false;
-      handlerErrors('Give the name of the patient', 'name');
+      handlerErrors('Give the name of the patient.', 'name');
     }
 
     if(!inputs.telephone) {
       validate = false;
-      handlerErrors('Give the telephone of the patient', 'telephone');
+      handlerErrors('Give the telephone of the patient.', 'telephone');
     }
 
     if(!inputs.cellphone) {
       validate = false;
-      handlerErrors('Give the cellphone of the patient', 'cellphone');
+      handlerErrors('Give the cellphone of the patient.', 'cellphone');
     }
 
     if(!inputs.email) {
         validate = false;
-        handlerErrors('Give the email of the patient', 'email');
+        handlerErrors('Give the email of the patient.', 'email');
       }
 
       if(!inputs.responsibleName) {
         validate = false;
-        handlerErrors('Give the name of the responsible', 'responsibleName');
+        handlerErrors('Give the name of the responsible.', 'responsibleName');
       }
 
       if(!inputs.responsibleTelephone) {
         validate = false;
-        handlerErrors('Give the telephone of the responsible', 'responsibleTelephone');
+        handlerErrors('Give the telephone of the responsible.', 'responsibleTelephone');
       }
 
     if(validate){
